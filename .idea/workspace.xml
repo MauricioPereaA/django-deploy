@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="670c145b-27b1-4967-98bc-9f67a52b64c5" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1ZjFWEmqpDqi8V5f0ytMhKCt7lp" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/platzigram/templates/posts" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="670c145b-27b1-4967-98bc-9f67a52b64c5" name="Default Changelist" comment="" />
+      <created>1585344625435</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1585344625435</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="915" y="1111" key="SettingsEditor" timestamp="1585357247049">
+      <screen x="710" y="1080" width="1366" height="768" />
+    </state>
+    <state x="915" y="1111" key="SettingsEditor/710.1080.1366.768/777.0.1783.1080@710.1080.1366.768" timestamp="1585357247049" />
+    <state x="1049" y="1290" key="com.intellij.ide.util.TipDialog" timestamp="1585603884840">
+      <screen x="710" y="1080" width="1366" height="768" />
+    </state>
+    <state x="1049" y="1290" key="com.intellij.ide.util.TipDialog/67.27.2493.1053/710.1080.1366.768@710.1080.1366.768" timestamp="1585603884840" />
+    <state x="1089" y="1169" width="672" height="678" key="search.everywhere.popup" timestamp="1585361637450">
+      <screen x="710" y="1080" width="1366" height="768" />
+    </state>
+    <state x="1089" y="1169" width="672" height="678" key="search.everywhere.popup/710.1080.1366.768/777.0.1783.1080@710.1080.1366.768" timestamp="1585361637450" />
+  </component>
+</project>
