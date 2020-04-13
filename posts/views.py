@@ -16,6 +16,9 @@ from datetime import datetime
 #Models
 from posts.models import Post
 
+#RateLimit
+from ratelimit.mixins import RatelimitMixin
+
 """ posts = [
     {
         'title': 'Mont Blanc',
@@ -52,8 +55,14 @@ from posts.models import Post
 
 # Create your views here.
 
-class PostsFeedView(LoginRequiredMixin, ListView):
+
+class PostsFeedView(RatelimitMixin, LoginRequiredMixin, ListView):
     """Return all published posts"""
+
+    ratelimit_key = 'ip'
+    ratelimit_rate = '5/m'
+    ratelimit_block = 'False'
+    ratelimit_method = 'GET'
 
     template_name = 'posts/feed.html'
     model = Post

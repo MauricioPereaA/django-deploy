@@ -5,6 +5,10 @@ from django.conf.urls.static import static
 from django.conf import settings
 from django.contrib import admin
 from django.urls import path, include
+from django.conf.urls import url
+
+#Graphql
+from graphene_django.views import GraphQLView
 
 
 #Views
@@ -16,6 +20,7 @@ from django.urls import path, include
 urlpatterns = [
 
     path('admin/', admin.site.urls),
+    url(r'^graphql$', GraphQLView.as_view(graphiql=True)),
 
     # path('hello-world', local_views.hello_world, name='hello_world'),
     # path('sorted/', local_views.sort_int, name='sort'),

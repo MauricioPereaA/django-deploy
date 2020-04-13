@@ -21,6 +21,13 @@ from users.models import Profile
 #Forms
 from users.forms import SignupForm
 
+#Serializers
+from .serializers import UserSerializer, ProfileSerializer
+
+#RestTools
+from rest_framework import viewsets
+from rest_framework import permissions
+
 
 class UserDetailView(LoginRequiredMixin, DetailView):
     """User detail view"""
@@ -172,3 +179,15 @@ def logout_view(request):
     #     return redirect('login')
 
     # return render(request, 'users/signup.html')
+
+
+class UserViewSet(viewsets.ModelViewSet):
+	queryset = User.objects.all().order_by('-date_joined')
+	serializer_class = UserSerializer
+	permission_classes = [permissions.IsAuthenticated]
+
+
+class ProfileViewSet(viewsets.ModelViewSet):
+	queryset = Profile.objects.all()
+	serializer_class = ProfileSerializer
+    
