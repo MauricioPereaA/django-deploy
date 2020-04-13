@@ -27,6 +27,7 @@ class PostAdmin(admin.ModelAdmin):
                      'user__username',
                     )
 
+
     # fieldsets = (
     #     ('Profile', {
     #         'fields': (('user', 'picture'),),

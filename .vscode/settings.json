@@ -1,3 +1,4 @@
 {
-    "python.pythonPath": ".venvPlatzigram/bin/python3.8"
+    "python.pythonPath": ".venvPlatzigram2/bin/python",
+    "git.ignoreLimitWarning": true
 }
