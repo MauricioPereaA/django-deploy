@@ -19,6 +19,15 @@ from posts.models import Post
 #RateLimit
 from ratelimit.mixins import RatelimitMixin
 
+# #Cache
+# from django.core.cache import cache
+# from django.conf import settings
+# from django.core.cache.backends.base import DEFAULT_TIMEOUT
+# from django.views.decorators.cache import cache_page
+
+# CACHE_TTL = getattr(settings, 'CACHE_TTL', DEFAULT_TIMEOUT)
+
+
 """ posts = [
     {
         'title': 'Mont Blanc',
@@ -60,7 +69,7 @@ class PostsFeedView(RatelimitMixin, LoginRequiredMixin, ListView):
     """Return all published posts"""
 
     ratelimit_key = 'ip'
-    ratelimit_rate = '5/m'
+    ratelimit_rate = '100/s'
     ratelimit_block = 'False'
     ratelimit_method = 'GET'
 

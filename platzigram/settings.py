@@ -25,7 +25,7 @@ SECRET_KEY = '854pd(*bt=i=sw(6@+ieex)h_sc3_luuc3rx6h7gz5&*2%5$xq'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['0.0.0.0','127.0.0.1', 'localhost']
 
 REST_FRAMEWORK = {
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
@@ -164,4 +164,14 @@ LOGOUT_REDIRECT_URL = LOGIN_URL
 #Graphql
 GRAPHENE = {
     'SCHEMA': 'platzigram.schema.schema'
+}
+
+#Redis Cache
+CACHE_TTL = 60 * 1
+
+CACHES = {
+    "default": {
+        "BACKEND": "django_redis.cache.RedisCache",
+        "LOCATION": "redis://127.0.0.1:6379/1"
+    }
 }

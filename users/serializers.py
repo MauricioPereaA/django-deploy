@@ -15,6 +15,9 @@ class UserSerializer(serializers.HyperlinkedModelSerializer):
 
 
 class ProfileSerializer(serializers.HyperlinkedModelSerializer):
+    """Profile Serializer"""
+
+    username = serializers.StringRelatedField(many=True)
     class Meta:
         model = Profile
-        fields = ['website', 'phone_number', 'biography']
+        fields = ['username' , 'website', 'phone_number', 'biography']
