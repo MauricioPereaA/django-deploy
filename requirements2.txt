@@ -64,4 +64,4 @@ sos==3.6
 SSSDConfig==2.2.0
 syspurpose==1.25.17
 systemd-python==234
-urllib3==1.24.2
+urllib3==1.26.5
